@@ -1,15 +1,74 @@
 <!DOCTYPE html>
  <html lang="en">
-     <head>
+    <head>
          <meta charset="UTF-8" />
          <title>Run Buddy</title>
      </head>
 <body>
+  <style>
+    body {
+  /* more on this crazy alphanumerical value in a minute! */
+  color: #39a6b2;
+  font-family: Helvetica, Arial, sans-serif;
+}
+  </style>
     <!-- navigation-->
     <header>
 <h1>
+  <style>
+    header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #fce138;
+  margin: 0;
+}
+
+header a {
+  color: #fce138;
+}
+  </style>
   <a href="/"> RUN BUDDY</a>
   </h1>
+  <style>
+ header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+  }
+  
+  header a {
+    color: #fce138;
+  }
+   /* apply styles to <header> */
+    header {
+            padding: 20px 35px;
+            background-color: #39a6b2;
+          }
+           /* Applies 20px to every side (top, right, bottom, left) */
+ header {
+   padding: 20px;
+ }
+
+ /* Applies 20px to the top and bottom, then 35px to the left and right */
+ header {
+   padding: 20px 35px;
+ }
+
+ /* Applies 10px to the top, 15px to the right, 20px to the bottom, 25px to the left (in that specific clockwise order) */
+ header {
+   padding: 10px 15px 20px 25px;
+ }
+
+ /* Explicitly list the side it should be applied to*/
+ header {
+   padding-top: 10px;
+   padding-right: 15px;
+   padding-bottom: 20px;
+   padding-left: 25px;
+ }
+  </style>
+
 <nav>
     <!-- Unordered list element -->
 <ul>
@@ -33,6 +92,41 @@
 
     <!-- hero/jumbotron -->
     <section>
+      <style>
+      section {
+        padding: 60px;
+        background-image: url("../images/hero-bg.jpg");
+      }
+      </style>
+      <div>
+        <h3>Get Started Today</h3>
+        <p>Fill out this form and one of our trainers will schedule a consult</p>
+      <!-- Add form element -->
+  <form>
+    <label for="name">Enter full name:</label>
+ <input type="text" placeholder="Your Name" name="name" id="name" />
+ <label for="email">Enter email address:</label>
+ <input type="text" placeholder="Email Address" name="email" id="email" />
+ <label for="phone">Enter a telephone number:</label>
+ <input type="text" placeholder="Phone Number" name="phone" id="phone"/>
+ <p>
+  Have you worked out with a trainer before?
+  <input type="radio" name="trainer-confirm" id="trainer-yes" />
+  <label for="trainer-yes">Yes</label>
+  <input type="radio" name="trainer-confirm" id="trainer-no" />
+  <label for="trainer-no">No</label>
+</p>
+<p>
+  <label for="checkbox" >
+    I acknowledge that I am at least 18 years of age.
+  </label>
+  <input type="checkbox" name="age-confirm" id="checkbox" />
+</p>
+<button type="submit">
+  Get running!
+</button>
+  </form>
+      </div>
     </section>
 
    <!-- "what we do" section -->
